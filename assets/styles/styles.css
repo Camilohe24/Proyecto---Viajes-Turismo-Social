@@ -153,6 +153,7 @@
   height: 300px;
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .destinos {
@@ -210,8 +211,8 @@
 /* Inicio Planes Antioquia */
 
 .antioquia {
-  width: 97.58vw;
-  height: 550px;
+  width: auto;
+  height: auto;
   margin-top: 0;
   display: flex;
   justify-content: center;
