@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Contenedor - Encabezado */
+
+.header {
+    background-color: #2AD7FE;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    position: absolute;
+  }
+  
+/* Incio - Barra de navegación */
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    margin: 10 auto;
+    padding-right: 40px;
+    
+  }
+  
+  .nav img {
+    width: auto;
+    line-height: 70px;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    padding-left: 40px;
+    line-height: 70px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  
+  .nav-menu-link {
+    padding: 13px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover {
+    background-color: #034574;
+    transition: 0.5s;
+  }
+  
+/* Fin - Header */
+
+.main {
+    background-color: purple;
+    height: auto;
+    width: auto;
+}
+
+.section {
+    background-color: purple;
+}
+
+/* Inicio - Pie de Pagina */
+
+.pie-pagina {
+    width: 100%;
+    background-color: #2AD7FE;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+    position: absolute;
+    bottom: 0;
+    background-color: #2AD7FE;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+    height: auto;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Fin - Pie de Pagina */
