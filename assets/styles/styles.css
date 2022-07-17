@@ -9,7 +9,7 @@
 /* Contenedor - Encabezado */
 
   .header {
-    background-color: aqua;
+    background-color: rgba(255,255,255, 0.5);
     height: 70px;
     position: fixed;
     width: 100%;
@@ -71,33 +71,28 @@
 
   .viajes {
     width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .viajes-box{
+    width: 100%;
   }
 
   .bg-main1 {
-    width: 100vw;
-    height: 540px;
-    display: grid;
-    grid-template-columns:repeat(5,1fr) ;
-    grid-template-rows: repeat(2,270px);
+    width: 100%;
+    height: 250px;
   }
-
-  .galery {
-    grid-column: 1/span 5;
-    grid-row: 1/span 2;
-    object-fit: cover; 
-    overflow: hidden;
+  .bg-main1 img{
+    width: 100%;
+    height: 730px; 
   }
 
 .carrusel {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .destinos {
+  width: 100%;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
@@ -106,7 +101,6 @@
 }
 
 #carouselExampleControls {
-  height: 370px;
   width: 90%;
   top: 0;
   bottom: 0;
@@ -115,14 +109,16 @@
   padding: 0;
   margin: 0;
 }
-
+.segundo{
+  display: none;
+}
 .carousel-control-prev-icon {
-  margin-left: -210px;
+  margin-left: -100px;
   filter: opacity(0.4) drop-shadow(0 0 0 green);
 }
 
 .carousel-control-next-icon {
-  margin-right: -210px;
+  margin-right: -100px;
   filter: opacity(0.4) drop-shadow(0 0 0 green);
 }
 
@@ -131,7 +127,7 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 50px;
-  height: 370px;
+  height: 300px;
   margin-right: 50px;
 }
 
@@ -197,6 +193,9 @@
   font-weight: bolder;
   font-size: 30px;
 }
+.destinos p{
+  margin-bottom: 0;
+}
 
 .step-box {
   display: flex;
@@ -255,9 +254,13 @@
   justify-content: center;
   align-items: center;
 }
+.antioquia-box{
+  width: 100vw;
+
+}
 
 .planes-antioquia {
-  width: 100vw;
+  width: 100%;
   height: 540px;
   display: grid;
   grid-template-columns:repeat(5,1fr) ;
@@ -397,6 +400,34 @@
 
 .overlay-3 p {
   margin-bottom: 0;
+}
+
+@media screen and (max-width:1200px) {
+  .card-1:nth-child(5){
+    display:none;
+  }
+}
+@media screen and (max-width:990px) {
+  .card-1:nth-child(5){
+    display:none;
+  }
+  .card-1:nth-child(4){
+    display:none;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .carrusel-primero{
+    display: none;}
+  .segundo{
+    display:block;
+  }
+  .tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 /* Inicio - Pie de Pagina */
