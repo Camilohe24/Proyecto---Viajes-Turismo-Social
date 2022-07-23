@@ -11,9 +11,8 @@
   .header {
     background-color: rgba(255,255,255, 0.5);
     height: 70px;
-    position:fixed;
+    position: absolute;
     width: 100%;
-    top: 0;
     z-index: 1
   }
   
@@ -21,19 +20,20 @@
   
   .nav {
     justify-content: space-between;
-    max-width: 900px;
     margin: 10 auto;
+    margin-right: 40px;
   }
   
   .nav img {
     width: auto;
-    padding: 0 10px;
-    line-height: 70px;
+    height: 20%;
+    margin-top: -5px;
   }
 
   .nav-link {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: 600;
   }
   
   .logo {
@@ -45,20 +45,18 @@
   
   .nav-menu {
     display: flex;
-    margin-right: 10px;
     list-style: none;
   }
   
   .nav-menu-item {
     font-size: 15px;
-    margin: 0 10px;
-    line-height: 70px;
     text-transform: uppercase;
+    margin-top: 20px;
   }
   
   .nav-menu-link {
-    padding: 0px 8px;
     border-radius: 3px;
+    margin-top: -5px;
   }
   
   .nav-menu-link:hover {
@@ -73,7 +71,8 @@
   .viajes {
     width: 100%;
   }
-  .viajes-box{
+
+  .viajes-box {
     width: 100%;
   }
 
@@ -81,28 +80,34 @@
     width: 100%;
     height: 250px;
   }
-  .bg-main1 img{
+
+  .bg-main1 img {
     width: 100%;
-    height: 730px; 
+    height: 1060px; 
   }
 
 .carrusel {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+  margin-bottom: 30px;
 }
 
 .destinos {
   width: 100%;
+  height: auto;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
   font-weight: 300;
-  color: #0586c8;
+  color: black;
+
 }
 
 #carouselExampleControls {
-  width: 90%;
+  width: 80%;
+  height: auto;
   top: 0;
   bottom: 0;
   right: 0;
@@ -114,13 +119,13 @@
   display: none;
 }
 .carousel-control-prev-icon {
-  margin-left: -65px;
-  filter: opacity(0.4) drop-shadow(0 0 0 green);
+  margin-left: -275px;
+  /* filter: opacity(0.4) drop-shadow(0 0 0 green); */
 }
 
 .carousel-control-next-icon {
-  margin-right: -65px;
-  filter: opacity(0.4) drop-shadow(0 0 0 green);
+  margin-right: -275px;
+  /* filter: opacity(0.4) drop-shadow(0 0 0 green); */
 }
 
 .tarjetas {
@@ -257,15 +262,14 @@
 }
 .antioquia-box{
   width: 100vw;
-
 }
 
 .planes-antioquia {
   width: 100%;
-  height: 540px;
+  height: -440px;
   display: grid;
-  grid-template-columns:repeat(5,1fr) ;
-  grid-template-rows: repeat(2,270px);
+  grid-template-columns: repeat(5,1fr) ;
+  grid-template-rows: repeat(2,400px);
 }
 
 .primero {
@@ -277,8 +281,7 @@
 
 .primero img {
   width: 100%;
-  height: 540px;
-  object-fit: fill;
+  height: 840px;
 }
 
 .titulo-primero {
@@ -476,22 +479,22 @@
 
 .pie-pagina {
     width: 100%;
+    height: auto;
     background-color: #2AD7FE;
+    margin-top: 0px;
 }
 
 .pie-pagina .grupo-1 {
     width: 100%;
-    max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
+    grid-gap: 50px;
+    padding: 80px 0px;
 }
 
 .pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
